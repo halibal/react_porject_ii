@@ -20,7 +20,7 @@ function CardFunction({ items }) {
             <div className='content-container'>
                 <div className='points-container'>
                     <FontAwesomeIcon icon={faStar} className='start-icon' />
-                    <p className='event-points'>{items.rating} <span>({items.reviewCount}) - {items.location}</span></p>
+                    <p className='event-points'>{items.stats.rating} <span>({items.stats.reviewCount}) - {items.location}</span></p>
                 </div>
                 <p className='card-title'>{items.title}</p>
                 <p className='event-price'>From ${items.price} <span>/ person</span></p>
