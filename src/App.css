@@ -1,38 +1,117 @@
 .App {
-  text-align: center;
+	text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App .whole-page-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App .card-container {
+	display: flex;
+	flex-wrap: wrap;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* static part */
+
+.navbar {
+	display: flex;
+	align-items: center;
+	padding-left: 3rem;
+	height: 80px;
+	box-shadow: 0 1px 20px grey;
 }
 
-.App-link {
-  color: #61dafb;
+.airbnblogo {
+	width: 48px;
+	height: 48px;
+	margin-right: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.airbnbTxt {
+	color: rgb(255, 93, 93);
+}
+
+.static-content {
+	margin: 1rem 3rem;
+}
+
+.airbnbpicture {
+	width: 100%;
+	max-width: 1200px;
+}
+
+.text-content {
+	text-align: start;
+}
+
+/* card-body part */
+
+.card-body {
+	width: 225px;
+	margin: 1rem 2rem;
+	text-align: start;
+}
+
+.card-body * {
+	margin: 0;
+}
+
+.card-body .card-img-container {
+	position: relative;
+}
+
+.card-body .card-img {
+	max-height: 400px;
+	margin: 0;
+	border-radius: 1rem;
+}
+
+.card-body .product-status {
+	font-weight: bold;
+	cursor: default;
+	text-align: center;
+	width: 100px;
+	background-color: white;
+	position: absolute;
+	left: 15px;
+	top: 15px;
+}
+
+.card-body .card-title {
+	margin: 5px 0;
+}
+
+.card-body .content-container {
+	margin: 5px 5px;
+}
+
+.card-body .event-points {
+	margin-left: 10px;
+	font-weight: bold;
+}
+
+.card-body .event-points>span {
+	font-weight: normal;
+	color: grey;
+}
+
+.card-body .event-price {
+	font-weight: bold;
+}
+
+.card-body .event-price>span {
+	font-weight: normal;
+	color: grey;
+}
+
+.card-body .points-container {
+	display: flex;
+	align-items: center;
+}
+
+.card-body .start-icon {
+	color: red;
 }
